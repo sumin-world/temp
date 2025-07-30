@@ -1,8 +1,25 @@
+# Rust 워크스페이스 및 프로젝트 관련
+# -----------------------------
+# 워크스페이스 전체의 빌드 결과물 (가장 중요!)
 /target/
+
+# Cargo의 로컬 레지스트리 데이터
 .cargo/
-# /Cargo.lock # 필요시 주석 해제
+
+# 의존성 잠금 파일 (보통 Git에 포함시키는 것이 권장됨. 무시하려면 주석 해제)
+# Cargo.lock # 이 줄은 일반적으로 주석 처리된 채로 두거나 아예 없앰.
+
+
+# Rust 언어 서버 및 rust-analyzer 관련 파일 (IDE 사용 시 생성)
 .rustc_info.json
-.vscode/
-.idea/
-.DS_Store
-Thumbs.db
+
+# C 언어 컴파일 관련
+# -----------------
+# C 컴파일 시 생성되는 오브젝트 파일
+*.o
+# Linux/macOS 기본 실행 파일 이름 (gcc 컴파일 시)
+a.out
+# Windows 실행 파일 (Windows에서 컴파일 시)
+*.exe
+# C 컴파일 시 생성되는 디버그 정보 파일 (일반적으로 .exe, a.out과 함께 생성)
+*.d
