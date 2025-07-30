@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "bj_10807", "bj_11382", "bj_9316"
+]
+
+[workspace.package]
+edition = "2021"
+version = "0.1.0"
